@@ -333,20 +333,20 @@
   "7978b128f836c1ca": "Zegar tego urządzenia jest źle ustawiony",
   "26f98026953e6835": "{host} nie jest powiązany z twoim kontem T3 Connect",
   "df82277b5fdf21ad": "T3 Connect zwrócił błąd",
-  "d2c536acf6fef486": "Tunel {host} jest wciąż konfigurowany",
+  "d2c536acf6fef486": "Trwa konfiguracja tunelu środowiska {host}.",
   "4e554b7a57549e72": "T3 Connect nie jest włączony na {host}",
-  "919dcd4227cf751a": "Tunel {host} jest offline",
+  "919dcd4227cf751a": "Tunel środowiska {host} jest offline",
   "34e205f55d30b081": "Tunel działa, ale T3 Code na {host} nie odpowiedział",
   "ff444db47a6c5d7b": "T3 Code na {host} wysłał nieoczekiwaną odpowiedź",
-  "382dbe658dff5a11": "Nie udało się rozwiązać adresu tunelu {host}",
-  "7b15ef746f8fe359": "Bezpieczne połączenie z tunelem {host} nie powiodło się",
-  "6545cbf2f3aca443": "Tunel {host} odrzucił połączenie",
+  "382dbe658dff5a11": "Nie udało się ustalić adresu IP tunelu środowiska {host}",
+  "7b15ef746f8fe359": "Nie udało się nawiązać bezpiecznego połączenia z tunelem środowiska {host}",
+  "6545cbf2f3aca443": "Tunel środowiska {host} odrzucił połączenie",
   "67ae479adb01ae59": "{host} nie odpowiedział na czas",
   "8fbb34f526bbc90b": "To urządzenie nie mogło przygotować połączenia",
   "9b002359b7126d14": "T3 Connect nie zaakceptował logowania tego urządzenia",
   "fbd2d87881e54615": "To urządzenie nie może połączyć się z T3 Connect",
-  "7ac7d2bd5d3c3b74": "To urządzenie nie może połączyć się z tunelem {host}",
-  "9cf0001d0c442fe2": "T3 Connect nie mógł połączyć się z tunelem {host}",
+  "7ac7d2bd5d3c3b74": "To urządzenie nie może połączyć się z tunelem środowiska {host}",
+  "9cf0001d0c442fe2": "T3 Connect nie mógł połączyć się z tunelem środowiska {host}",
   "e7d37a933a7e89f5": "T3 Code na {host} nie zaakceptował tego urządzenia",
   "b7e1fa98dd44a903": "T3 Code na {host} nie odpowiedział",
   "5d11910833c27d35": "Na {host} sprawdź Ustawienia > Udostępnianie i dostęp lub uruchom `t3 connect status`.",
@@ -378,7 +378,7 @@
   "964a38e20cc7ecda": "Upewnij się, że na {host} działa T3 Code.",
   "00fcb4f22434502b": "Spróbuj ponownie. Jeśli problem się powtarza, skopiuj diagnostykę.",
   "589f3050d8371c67": "To urządzenie",
-  "f8561e25d9a3d132": "Tunel {host}",
+  "f8561e25d9a3d132": "Tunel środowiska {host}",
   "11e2222747466460": "T3 Code na {host}",
   "3d1e8943c6f1623f": "Przyczyna",
   "68c94644988bb4d7": "Status HTTP",
@@ -1691,12 +1691,12 @@
   "942bd0edd477156d": "Otwórz Ustawienia -> Kontrola wersji, aby skonfigurować tego dostawcę.",
   "9b716cd83af188fb": "Źródła",
   "81a3f8580a37f609": "Środowisko niedostępne",
-  "59e45b02b09e183d": "Brak połączenia z {environment}.",
+  "59e45b02b09e183d": "Brak połączenia ze środowiskiem {environment}.",
   "f84b215481da2dfe": "Wybrane środowisko nie jest połączone.",
   "b5adbf54cbefee38": "Środowiska",
   "3a163697598a2390": "Połącz środowisko",
   "181677cda4d3fd0a": "Żadne połączone środowisko nie może dodać projektu",
-  "3a0bf3d17f31584e": "Nowy wątek w {project}",
+  "3a0bf3d17f31584e": "Nowy wątek w projekcie {project}",
   "4b4b64cc95acb8da": "Nowy wątek w...",
   "3f581e98c86df72a": "Nowy wątek bez projektu",
   "e510d9a7b684fbfe": "Przeanalizuj zgłoszenie",
@@ -1777,7 +1777,7 @@
   "82fef397e837ceb0": "Nie udało się przeszukać wiadomości w wątkach.",
   "1fe6afb5ec4534b7": "Wymagana konfiguracja",
   "cd33738b793eb8a6": [
-    "Nowy wątek w ",
+    "Nowy wątek w projekcie ",
     {
       "t": "span",
       "i": 1,
@@ -1820,7 +1820,7 @@
   "7af7f00b85cc2930": "Potwierdź akcję",
   "8b418a02b73f49b8": "Ta akcja wymaga twojego potwierdzenia.",
   "e74139c17fab1fa1": "Potwierdź",
-  "775a3e99e2638341": "Urządzenie chce połączyć się z {environmentLabel}",
+  "775a3e99e2638341": "Urządzenie chce połączyć się ze środowiskiem {environmentLabel}",
   "a8befcb9f1c61f60": "{device}. Zatwierdź tylko wtedy, gdy wyświetla kod {code}.",
   "ac48cc297029db41": "Zatwierdź",
   "c12ca3fea745def0": "Nie udało się zatwierdzić urządzenia",
@@ -1854,7 +1854,7 @@
   "20385e00db2ba64d": "Odtwarzanie nie powiodło się",
   "07ec9dca9507f98f": "Odtwórz nagraną turę",
   "5226427a0a03f324": [
-    "Odtwórz w ",
+    "Odtwórz w projekcie ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -2148,8 +2148,8 @@
   "1c79d42e902ff431": "Ponów",
   "5952671c8cf107c6": "Nie udało się ponowić klonowania",
   "0d5c4899e08345c4": "Usuń projekt",
-  "87c3aba87e1db42a": "Również na {labels}",
-  "0738606a9798103f": "Na {labels}",
+  "87c3aba87e1db42a": "Także w środowiskach: {labels}",
+  "0738606a9798103f": "Środowiska: {labels}",
   "63977cd5e4535393": "Odepnij {name}",
   "c4c2d240ffe55dec": "Przypnij {name}",
   "a1190e56375f2032": "{action} ({shortcut})",
@@ -2215,7 +2215,7 @@
   "3255abe463a83a3f": "Nie udało się przygotować wątku {term, select, mr {merge requesta} cr {change requesta} other {pull requesta}}.",
   "cfc6b8e4d302189c": "Wklej adres URL {term, select, mr {merge requesta} cr {change requesta} other {pull requesta}} lub polecenie checkout albo wpisz 123 / #123.",
   "5e3cb0bfcee48466": "Użyj adresu URL {term, select, mr {merge requesta} cr {change requesta} other {pull requesta}}, polecenia checkout, 123 lub #123.",
-  "3c113f34f37bd489": "Odszukaj {term, select, mr {merge request} cr {change request} other {pull request}} z {provider}, a następnie utwórz wersję roboczą wątku w głównym repozytorium lub w osobnym worktree.",
+  "3c113f34f37bd489": "Odszukaj {term, select, mr {merge request} cr {change request} other {pull request}} u dostawcy {provider}, a następnie utwórz wersję roboczą wątku w głównym repozytorium lub w osobnym worktree.",
   "25d251408808632c": "{term, select, mr {merge request} cr {change request} other {pull request}}",
   "79af20c22805d206": "Adres URL {term, select, mr {MR} cr {change requesta} other {PR}}, polecenie checkout lub #42",
   "2e8e9160e283cc96": "{state, select, open {otwarty} closed {zamknięty} merged {scalony} other {{state}}}",
@@ -2325,18 +2325,18 @@
   "d8e50e9835a12e8d": "Nie udało się skopiować polecenia aktualizacji do schowka.",
   "9b947c837e3756c0": "Clipboard API jest niedostępne podczas kopiowania polecenia ponownego uruchomienia.",
   "4321f91645a6516a": "Nie udało się skopiować polecenia ponownego uruchomienia do schowka.",
-  "c5422ea828b540ed": "Zaktualizować aplikacje desktopowe T3 Code na {servers}? Zostaną zamknięte i uruchomione ponownie na tych komputerach.",
+  "c5422ea828b540ed": "Zaktualizować aplikacje desktopowe T3 Code na komputerach: {servers}? Aplikacje zostaną zamknięte i uruchomione ponownie na tych komputerach.",
   "b25472ef70df9b5d": "Zaktualizuj wszystkie",
   "febf4ec3cdcdf372": "Skopiowano polecenie aktualizacji",
   "bee440d0da53841c": "Skopiowano polecenie ponownego uruchomienia",
-  "9e17a8beb64d6130": "Uruchom `{command}` na {serverLabel}, a następnie uruchom ponownie t3 ze swoimi zwykłymi opcjami.",
-  "218253b96de09d5d": "Zatrzymaj t3 na {serverLabel}, a następnie uruchom je ponownie za pomocą `{command}` z tym samym podpoleceniem i opcjami. Nie aktualizuje to zainstalowanego polecenia t3.",
+  "9e17a8beb64d6130": "Na komputerze {serverLabel} wykonaj polecenie `{command}`, a następnie uruchom ponownie t3 z opcjami, których zwykle używasz.",
+  "218253b96de09d5d": "Na komputerze {serverLabel} zatrzymaj t3, a następnie uruchom je ponownie poleceniem `{command}` z tym samym podpoleceniem i opcjami. Ta operacja nie aktualizuje zainstalowanego polecenia t3.",
   "3cb4fcae1546e2eb": "Nie udało się skopiować polecenia aktualizacji",
   "c10262062b7f9a5e": "Zaktualizować aplikację desktopową T3 Code, w której działa {serverLabel}? Zostanie zamknięta i uruchomiona ponownie na tym komputerze.",
   "a1581c125ff5ba06": "Kopiuj polecenie aktualizacji",
   "b3ba2b8e2eb87795": "Kopiuj polecenie ponownego uruchomienia",
   "deeb29ec7a4749c1": "Zaktualizuj",
-  "097b5f9ddc46e66c": "{action} dla {serverLabel}",
+  "097b5f9ddc46e66c": "{action} (serwer: {serverLabel})",
   "f8725d62bc72896d": "Zmień kanał w sekcji Informacje → Kanał aktualizacji",
   "048a22fa4de22f96": "Zaktualizuj aplikację desktopową na tamtym komputerze, aby zaktualizować ten serwer.",
   "e7a50ab49cdfd076": "Ponowne generowanie… ({count})",
@@ -2395,9 +2395,9 @@
   "792fd010fcd31023": "Nie udało się przeszukać wiadomości w wątkach",
   "c1ebd6fc41cec538": "Nie znaleziono wątków",
   "e3cf66218e1e3fda": "Brak aktywnych wątków w tych projektach",
-  "0b58e43fd858408a": "Brak aktywnych wątków w {project}",
+  "0b58e43fd858408a": "Brak aktywnych wątków w projekcie {project}",
   "e3ed00af71363d39": "Brak jeszcze wątków w tych projektach",
-  "981053bcf95b3d3f": "Brak jeszcze wątków w {project}",
+  "981053bcf95b3d3f": "W projekcie {project} nie ma jeszcze wątków",
   "151767f20fa67c48": "Przypięte",
   "db8f17154d4f0cfa": "Aktywne",
   "9578dc3e84f82081": "W toku",
@@ -2537,7 +2537,7 @@
   "8b5960826d52324f": "załącz ponownie",
   "b8226cf1bb23db88": "Załączone wideo z podglądu, {name}, {size}",
   "a9d980bcd5975ffe": "Załączony plik, {name}, {size}",
-  "182d4f1beb135a6f": "Nie zapisano {name} razem z tą wersją roboczą. Załącz go ponownie, aby go wysłać.",
+  "182d4f1beb135a6f": "Plik „{name}” nie został zapisany z tą wersją roboczą. Załącz go ponownie, aby go wysłać.",
   "3c00a11e86f58071": "Wycinek podglądu z adnotacjami",
   "2a191ccd9fbf02af": "Ten kontekst nie jest już dostępny. Usuń go lub załącz ponownie.",
   "2015dc02d7941a79": "Zrzut ekranu niedostępny",
@@ -2620,7 +2620,7 @@
   "7c785ec68fc205f5": "Zapisywanie…",
   "374caa799474ba78": "Zapisz zmiany",
   "e075244ca816ebf6": "Zapisz akcję",
-  "f50619195a6d0ad2": "Przyznaj {appName} dostęp do {owner}",
+  "f50619195a6d0ad2": "Przyznaj aplikacji {appName} dostęp do konta {owner}",
   "9b771434a1d169dd": "Nie jest tam zainstalowana, więc żądania do GitHuba dotyczące {repository} są wysyłane z twojego konta, które ma niższy limit żądań.",
   "5d973795984549fc": "Zainstaluj",
   "d2ba9ab14fd2e81c": "Kopiuj",
@@ -2660,8 +2660,8 @@
   "80e26bf40e263cbc": "Te tytuły już pasują do swoich wątków.",
   "e171ad5dd254389e": "Nie udało się przygotować środowiska SSH: {message}",
   "e0465384c9425d24": "Środowisko SSH nie wydało danych uwierzytelniających do parowania.",
-  "69c97cece949d88c": "Ten host prowadzi do {label}, czyli innego komputera. Dodaj go jako osobne środowisko.",
-  "2e79897eb713ed26": "Na {label} działa T3 Code {serverVersion}, a ta aplikacja desktopowa ma wersję {appVersion}, przez co serwer nie mógł zaakceptować próby sparowania z aplikacją. Uruchom ponownie serwer T3 na {label}, aby działał w wersji {appVersion}, a potem spróbuj ponownie.",
+  "69c97cece949d88c": "Ten host prowadzi do innego komputera: {label}. Dodaj go jako osobne środowisko.",
+  "2e79897eb713ed26": "Na komputerze {label} działa T3 Code {serverVersion}. Ta aplikacja desktopowa ma wersję {appVersion}, więc serwer nie mógł zaakceptować parowania. Uruchom ponownie serwer T3 na komputerze {label} w wersji {appVersion} i spróbuj ponownie.",
   "e6d4dfcbbe956abf": "Zaloguj się do T3 Connect, aby połączyć się z tym środowiskiem.",
   "e28e8b992d54132a": "Sesja T3 Connect jest niedostępna.",
   "4701a911bb621b61": "Nie udało się wczytać głównych danych uwierzytelniających aplikacji desktopowej: {cause}",
@@ -2723,7 +2723,7 @@
   "ec2160de6dd9c8d3": "Nie udało się odczytać tekstu ze schowka.",
   "433bd7a75c28a858": "Nie udało się utworzyć repozytorium {label}",
   "181a251357eeca66": "{error} Aby spróbować ponownie, użyj opcji „Opublikuj repozytorium” w menu Git.",
-  "fc6379bdbd00c0a3": "Opublikowano w {label}",
+  "fc6379bdbd00c0a3": "Opublikowano u dostawcy {label}",
   "3a732730d719d7be": "Nie udało się utworzyć projektu",
   "3ca310078cbcad3a": "Utworzono {name}",
   "4d914be9dfe6b924": "Utworzono {name} bez pierwszego commita",
@@ -2750,7 +2750,7 @@
   "f2cb3cf1101b20e1": "To połączenie nie ma uprawnień do zmiany ustawień w wybranym środowisku.",
   "2d70a2cd43a8185e": "To połączenie nie ma uprawnień do zmiany ustawień w środowiskach {environments}.",
   "5dc9ac6d5a1f2424": "Nie zapisano ustawienia",
-  "db9304276e633ced": "Nie udało się zapisać w {label}: {error}",
+  "db9304276e633ced": "Nie udało się zapisać w środowisku {label}: {error}",
   "fbbd80725285025d": "Zapisywanie nie powiodło się. Spróbuj połączyć się ponownie i zapisać jeszcze raz.",
   "276c7fa42a15a542": "Zaktualizuj starsze serwery, aby zapisać to ustawienie.",
   "52163ddccc1eb594": "Ustawienie zapisano w części środowisk",
@@ -2789,7 +2789,7 @@
   "4fa610c76542a4c0": "Pasek boczny widoczny",
   "9dddd0641bbf697d": "Pasek boczny ukryty",
   "5ff49c8addea4bf3": "Zbyt duże do skopiowania.",
-  "adc97408ec076a65": "Nie udało się skopiować {count, plural, one {{count} pliku} few {{count} plików} many {{count} plików} other {{count} pliku}} do {target}",
+  "adc97408ec076a65": "Nie udało się skopiować {count, plural, one {{count} pliku} few {{count} plików} many {{count} plików} other {{count} pliku}} na komputer {target}",
   "fc362be86e600369": "Odrzucono przesyłanie ({status})",
   "545070bc2b104854": "Przesyłanie nie powiodło się",
   "edf351db0bb13fab": "Przekroczono limit czasu przesyłania",
@@ -2964,7 +2964,7 @@
   "739e6f9ca0eaf70f": "Odmawianie…",
   "1017e5f07acb58b8": "Zamknij tę stronę i rozpocznij logowanie ponownie z poziomu agenta.",
   "724b26759d3c7e93": [
-    "Ten agent chce korzystać z wątków we wszystkich projektach na ",
+    "Ten agent chce korzystać z wątków we wszystkich projektach w środowisku ",
     {
       "t": "span",
       "i": 1,
@@ -2983,7 +2983,7 @@
     ")."
   ],
   "2d3d4fb05ed5ea44": [
-    "Ten agent chce korzystać z wątków we wszystkich projektach na ",
+    "Ten agent chce korzystać z wątków we wszystkich projektach w środowisku ",
     {
       "t": "span",
       "i": 1,
@@ -3168,7 +3168,7 @@
   "305d6d72f1220d98": "Wyszukiwanie pull requesta...",
   "cf855794f7b8ddb5": "Wyszukiwanie umiejętności obszaru roboczego...",
   "e159e35b83a86404": "Wyszukiwanie plików obszaru roboczego...",
-  "c347652bd889e70f": "Wiadomość do {title}",
+  "c347652bd889e70f": "Wiadomość w wątku: {title}",
   "9bf7fa475fe78de5": "Wiadomość",
   "86ba20bb0ac0e5d0": "Wyślij opinię, aby odrzucić to żądanie",
   "880aa376639f0b04": "Napisz, aby odrzucić i przekierować agenta",
@@ -3193,7 +3193,7 @@
   "7514746d2bd43a1c": "Tytuł wątku",
   "ab42a6d2ab6073d9": "Akcje wątku {title}",
   "cd8fd5a47060164b": [
-    "Nowy wątek w ",
+    "Nowy wątek w projekcie ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -3201,7 +3201,7 @@
     }
   ],
   "1c983a010570cdbb": [
-    "Rozpoczęty przez agenta na ",
+    "Rozpoczęty przez agenta na urządzeniu ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -3238,7 +3238,7 @@
   "359e36da660f2c59": "Zatwierdzenie z {title}",
   "8d9617edf6eee5b9": "Nie udało się przesłać decyzji o zatwierdzeniu.",
   "160ead9e70889628": [
-    "Wymagane zatwierdzenie z ",
+    "Prośba o zatwierdzenie z wątku: ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -3261,7 +3261,7 @@
   "c1faef1435412551": "Załącznik graficzny",
   "6bf404d068867eba": "Załącznik wersji roboczej może nie zostać zachowany",
   "d34bfcfec9cf90ef": "Przygotowywanie",
-  "b91816c882cc5ea0": "Ponów przesyłanie {name}",
+  "b91816c882cc5ea0": "Ponów przesyłanie pliku „{name}”",
   "2ffc366d6a7f88db": "Usuń {name}",
   "43bb969fde6c51c4": "Odtwórz {name}",
   "12170596ff889d5b": "Załącz ponownie",
@@ -3418,7 +3418,7 @@
     ", aby zacząć"
   ],
   "99c183d2407cd36d": "Dodaj projekt, aby zacząć",
-  "06b6bb85f2e34802": "Co zbudujemy w {project}?",
+  "06b6bb85f2e34802": "Co zbudujemy w projekcie {project}?",
   "5a405f15d9985bd6": "Co zbudujemy?",
   "613f8257a433cec4": "Multimedia",
   "e3baa1d5c822a835": "Pokaż zrzut ekranu",
@@ -3447,8 +3447,8 @@
   "44edab03bdd834b0": "Link dla gościa jest aktywny",
   "af2057b5701fe49e": "Gość",
   "50ddfa242f74c4b1": "{count, plural, one {{count} wiadomość od gościa czeka} few {{count} wiadomości od gościa czekają} many {{count} wiadomości od gościa czeka} other {{count} wiadomości od gościa czeka}}",
-  "ed5eb75060e6513f": "Odrzuć wiadomość od {guestName}",
-  "438efc8205a48969": "Wyślij wiadomość od {guestName}",
+  "ed5eb75060e6513f": "Odrzuć wiadomość od gościa {guestName}",
+  "438efc8205a48969": "Wyślij wiadomość od gościa {guestName}",
   "1b8e5125412bfefb": "Udostępnij gościowi",
   "356ec2ce33231586": "Gość widzi wątek tak jak ty, łącznie z danymi wyjściowymi poleceń i rozumowaniem agenta. Każda wysłana przez niego wiadomość czeka na ciebie.",
   "abd89e9eefedf11b": "Gotowe",
@@ -3489,18 +3489,18 @@
   "474774458cbb272c": "Adres",
   "89a68ae66d9266dc": "Ta aplikacja nie ma adresu komputera, przez który mógłby się z nim połączyć inny komputer. Wpisz jego adres https lub Tailscale.",
   "71a4002c45077fe2": [
-    "Ta aplikacja nie ma adresu ",
+    "Aplikacja nie zna adresu komputera ",
     {
       "i": 1,
       "k": "_gt_value_1",
       "v": "v"
     },
-    ", przez który mógłby się z nim połączyć inny komputer. Wpisz jego adres https lub Tailscale."
+    ", pod którym można się z nim połączyć z innej maszyny. Wpisz jego adres HTTPS lub Tailscale."
   ],
   "7ebb23e6bf9b19e8": "Kod parowania",
   "e8235ebb43ad7228": "Utwórz link na komputerze: Ustawienia → Udostępnianie i dostęp → Autoryzowane klienty → Utwórz link, a potem wklej tutaj jego kod.",
   "a974e6c3c613e452": [
-    "Utwórz link na ",
+    "Utwórz link na komputerze ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -3509,13 +3509,13 @@
     ": Ustawienia → Udostępnianie i dostęp → Autoryzowane klienty → Utwórz link, a potem wklej tutaj jego kod."
   ],
   "c205277bd4ab61d2": [
-    "To środowisko jest już powiązane z ",
+    "To środowisko jest już powiązane z komputerem ",
     {
       "i": 1,
       "k": "_gt_value_1",
       "v": "v"
     },
-    ". Agent może korzystać z tego powiązania bez zmian; jego dostęp zmienisz w sekcji Ustawienia → Środowiska."
+    ". Agent może korzystać z tego powiązania. Uprawnienia zmienisz w sekcji Ustawienia → Środowiska."
   ],
   "000b0df227182d39": "Inny adres…",
   "eb6e0584cf4a2a1d": "Język: {language}",
@@ -3545,9 +3545,9 @@
   "6d329f7d3a50c7e7": "Kopiuj tabelę",
   "6c71d251d9917587": "Kopiuj jako Markdown",
   "d510b122f84051a0": "Kopiuj jako CSV",
-  "ced684880c2e1961": "Zezwolić {server} na uruchomienie {tool}?",
-  "b66fa23b5647b62d": "Wysłać tę wiadomość z {server}?",
-  "bae7f74153fa8a05": "Zapisać {names} z {server}?",
+  "ced684880c2e1961": "Zezwolić serwerowi {server} na uruchomienie narzędzia {tool}?",
+  "b66fa23b5647b62d": "Wysłać tę wiadomość z serwera {server}?",
+  "bae7f74153fa8a05": "Zapisać pliki z serwera {server}: {names}?",
   "7e072f3b5535dc99": "Zamknij pełny ekran",
   "efd6c11387619a64": "Aplikacja {server}",
   "cda76d56e346d417": [
@@ -3699,18 +3699,18 @@
   "9c1ae7fa9c9b2d0d": "Wcześniejsze kroki nie są wyświetlane.",
   "19074843c7d134dc": "Nie ma jeszcze transkryptu.",
   "e1ae6781c12a346b": "Otwórz",
-  "64a9a7f137f4715b": "Brak trasy SSH do {environment}",
+  "64a9a7f137f4715b": "Brak trasy SSH do środowiska {environment}",
   "cfe71c59f5139c49": "Brak trasy SSH do tego komputera",
-  "2f009ea4d4c52337": "Otwórz z komputera, aby edytować na {environment}",
+  "2f009ea4d4c52337": "Otwórz projekt na komputerze, aby edytować pliki w środowisku {environment}",
   "80e0de4088c22b70": "Otwórz z komputera, aby edytować na tym komputerze",
-  "c77307f0c52b5031": "Otwieranie przez SSH. Wymaga twojego klucza na {environment}",
+  "c77307f0c52b5031": "Otwieranie przez SSH. Klucz SSH musi być dostępny w środowisku {environment}.",
   "b3965b346de385af": "Otwieranie przez SSH. Wymaga twojego klucza na tym komputerze",
   "b3f54ee1cdcbe5f5": "Otwórz plik w preferowanym edytorze",
-  "392611fdc89f2809": "Otwarto w {editor}",
+  "392611fdc89f2809": "Otwarto w edytorze {editor}",
   "3dc681f293a3d077": "Wybierz edytor",
   "a034c6eed75c3256": "Nie znaleziono zainstalowanych edytorów",
   "dafffd8aabbe22d2": [
-    "Otwórz w ",
+    "Otwórz w programie ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -3905,13 +3905,13 @@
   "58ac05b9fbce58ce": "Zatrzymywanie...",
   "4bf9327818b58241": "Zatrzymaj",
   "8fe132a05b04a8dc": [
-    "Ten wątek ostatnio działał na ",
+    "Ostatnia tura w tym wątku korzystała z gałęzi ",
     {
       "i": 1,
       "k": "_gt_value_1",
       "v": "v"
     },
-    ". Wysłanie wiadomości spowoduje kontynuację na ",
+    ". Wysłanie wiadomości wznowi pracę na gałęzi ",
     {
       "i": 2,
       "k": "_gt_value_2",
@@ -4074,22 +4074,22 @@
   "309b160785f6c473": "Otwórz odgałęzienie w tym czacie",
   "6676cd4b8299663f": "Otwórz wątek nadrzędny w tym czacie",
   "63e8c7a0ef0513b5": "Powiązane wątki",
-  "68060b380fe53942": "Działa na {label}. Połącz się z nim, aby otworzyć tam wątek.",
-  "9996d9dac573001a": "Otwórz na {label}",
+  "68060b380fe53942": "Wątek działa w środowisku {label}. Połącz się z tym środowiskiem, aby go otworzyć.",
+  "9996d9dac573001a": "Otwórz w środowisku {label}",
   "15a601a94893277f": "Nie udało się otworzyć wątku nadrzędnego",
   "5eb43f554a5b7a58": "Wątek nadrzędny został usunięty",
-  "d1f659af28eca0ed": "Delegowano z {label}. Połącz się z nim, aby otworzyć wątek nadrzędny.",
+  "d1f659af28eca0ed": "Delegowano ze środowiska {label}. Połącz się z nim, aby otworzyć wątek nadrzędny.",
   "3b1f3d0fcd1c9fd7": "Delegowano z powiązanego środowiska. Połącz się z nim, aby otworzyć wątek nadrzędny.",
-  "96fc2108d6a798dc": "Otwórz agenta nadrzędnego na {label}",
+  "96fc2108d6a798dc": "Otwórz agenta nadrzędnego w środowisku {label}",
   "bc5f7c6821578b8f": "Poprzednie agenty",
   "8bcded34eb7e7f09": "Nie udało się scalić z powrotem",
   "ed2fc31d28c441da": "Nie udało się odłączyć sesji agenta",
   "ba2cf3dd6de0d1a6": "Nie udało się zatrzymać subagenta",
   "1c4391ec5c411ba7": "Nie udało się zatrzymać przepływu pracy",
-  "7af596fd1e3ac2a2": "Scal z powrotem z {parentTitle}",
+  "7af596fd1e3ac2a2": "Scal z rozmową nadrzędną: {parentTitle}",
   "566239c645ce0fff": "Scal z powrotem z rozmową źródłową",
   "1cfeabb8818f121f": "Ukończ przebieg w tym odgałęzieniu, zanim scalisz je z powrotem",
-  "36cf99230450eeaf": "Scal tę rozmowę z powrotem z {parentTitle}",
+  "36cf99230450eeaf": "Scal tę rozmowę z rozmową nadrzędną: {parentTitle}",
   "bda1cc7b91e07680": "Scal tę rozmowę z powrotem z jej źródłem",
   "de93e39b51ae5ebf": "Zatrzymaj subagenta {threadTitle}",
   "e7b97dccb035f744": "Pochodzenie · działające: {runningCount}",
@@ -4106,7 +4106,7 @@
     }
   ],
   "0bc72950072ee1aa": [
-    "na ",
+    "w środowisku ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -4375,7 +4375,7 @@
   "a02a5c40dfd8c806": "Odgałęzienie rozmowy",
   "717498f2abb43bfe": "Otwórz rozmowę źródłową",
   "81cbd4ade23efc77": "Otwórz odgałęzienie",
-  "c026ded437a942ee": "na {environment}",
+  "c026ded437a942ee": "w środowisku {environment}",
   "29b99b6828ed8295": "Nowa sesja",
   "42606de8b5a5e786": "Oczekuje na przekazanie kontekstu",
   "4d765811334b8edf": "Przekazanie kontekstu",
@@ -4587,7 +4587,7 @@
   "d08959c85dad0ed0": "Wiele modeli wymaga nowego wątku w projekcie Git. Każdy dostaje własny worktree.",
   "87d59d5dbb3eaf83": "Załączony wątek jest na innym komputerze",
   "4236b99f3807de4b": "Agent tego komputera nie może odczytać wątku „{title}”. Aby wysłać wiadomość, usuń z niej ten wątek lub przełącz się z powrotem na jego komputer.",
-  "811b25d99525bcf7": "Agent tego komputera nie może odczytać wątku „{title}”. Aby wysłać wiadomość, usuń z niej ten wątek lub przełącz się z powrotem na {owner}.",
+  "811b25d99525bcf7": "Agent na tym komputerze nie może odczytać wątku „{title}”. Aby wysłać wiadomość, usuń z niej ten wątek lub wróć do środowiska {owner}.",
   "55f9621a69825e20": "Nie zaktualizowano wiadomości w kolejce",
   "1072fb0e2846f2a4": "Wiadomości z kolejki nie można przenieść do czatu pobocznego. Usuń /side lub /btw, aby ją zapisać.",
   "170ab9bcffd26887": "Najpierw rozpocznij wątek Codex",
@@ -4718,7 +4718,7 @@
   "55c0728ebb0b05b1": "Cofnij zakończenie",
   "fd4e45408394aac4": "Powrót po odłożeniu",
   "e7f9e31365849b9f": "Ten dostawca nie obsługuje cofania historii rozmowy. Zamiast tego rozpocznij nowy wątek.",
-  "31db4cf2474ef2a6": "Połącz ponownie {environment} przed cofnięciem do punktu kontrolnego.",
+  "31db4cf2474ef2a6": "Połącz się ponownie ze środowiskiem {environment}, zanim cofniesz wątek do punktu kontrolnego.",
   "f7d2db726b3a9316": "Przerwij bieżącą turę przed cofnięciem do punktu kontrolnego.",
   "91688a74a7e860d1": "Nie udało się utworzyć odgałęzienia z tej odpowiedzi.",
   "831fba9edc1a8f8c": "Odgałęzienie zostało utworzone, ale dane jego wątku nie dotarły do tego klienta. Połącz ponownie i spróbuj otworzyć je z paska bocznego.",
@@ -4836,7 +4836,7 @@
   "6f0589fb1a5e38a9": "Powiązano {date}",
   "ba921b079703d6d5": "Zarządzany tunel",
   "a8716f4cb9fcf7bb": "Tylko publikowanie aktywności",
-  "e535cf8977e2a253": "Potwierdź wyrejestrowanie {environment}",
+  "e535cf8977e2a253": "Potwierdź wyrejestrowanie środowiska {environment}",
   "c36af6045c0cf0c3": "Wyrejestrowywanie…",
   "794422807b4a8af0": "Wyrejestruj",
   "d56bcdf4eef03768": "Wyrejestrowano serwer",
@@ -4866,7 +4866,7 @@
   "a8734a05e0d05791": "Dodano trasę T3 Connect",
   "97e57975f9afd3b5": "Dodano środowisko",
   "b6631e5ea82c8714": "{environment} przełącza się na T3 Connect, gdy jego inne trasy są nieosiągalne.",
-  "edee5a90871b9f87": "Łączenie z {environment} przez T3 Connect.",
+  "edee5a90871b9f87": "Łączenie ze środowiskiem {environment} przez T3 Connect.",
   "d0148cf283b376b7": "Nie udało się połączyć ze środowiskiem T3 Connect.",
   "1f59f66f0e0a1803": "Nie udało się połączyć ze środowiskiem",
   "2783bab4dc0dd697": "Wygląda na to, że jesteś offline.",
@@ -5048,8 +5048,8 @@
   "08098a6fb84e8a34": "Otwórz",
   "c71a5080b2026870": "Uruchom",
   "a34247bae083cebf": "Zamknij komunikat o błędzie urządzenia",
-  "191353bd8f033118": "Listy {first} i {second} na {host} mogą być niekompletne.",
-  "b17bcd4cbf80442e": "Lista {platform} na {host} może być niekompletna.",
+  "191353bd8f033118": "Listy urządzeń ({first} i {second}) na hoście {host} mogą być niekompletne.",
+  "b17bcd4cbf80442e": "Lista urządzeń ({platform}) na hoście {host} może być niekompletna.",
   "35f397929bb7de1f": "Wykrywanie urządzeń na {host} zgłosiło ostrzeżenie.",
   "8473dd302995c473": "Ponów wykrywanie urządzeń na {host}",
   "6e531f6633f59884": "Szczegóły dla {host}",
@@ -5069,7 +5069,7 @@
   "84e4baf07ad8883d": "Włącz w tym środowisku otwieranie symulatorów i emulatorów, zarówno działających tutaj, jak i na zdalnym hoście urządzeń.",
   "771365c337509a82": "Zezwól nowym sesjom agentów w tym środowisku na uruchamianie lokalnych i zdalnych urządzeń oraz sterowanie nimi, z automatyczną konfiguracją wymaganych narzędzi.",
   "6130fa854f8e9024": "Lista urządzeń z Androidem może być niekompletna. Sprawdź host urządzeń i spróbuj ponownie.",
-  "9edae9f03274cab1": "Nie wykryto obsługi {platform}.",
+  "9edae9f03274cab1": "Nie wykryto obsługi systemu {platform}.",
   "9ceeca01c1c48b48": "Nie wyświetlono urządzeń {platform}, ponieważ wykrywanie urządzeń zgłosiło problem.",
   "6cfe3b4931af6f8a": "Xcode jest zainstalowany, ale żaden iOS Simulator nie jest dostępny. Zainstaluj środowisko uruchomieniowe w Xcode Settings → Components.",
   "22750cc2c6dc56c4": "Android SDK jest zainstalowany, ale nie istnieje żadne urządzenie wirtualne. Utwórz je w Android Studio → Device Manager.",
@@ -5329,9 +5329,9 @@
   "b3a779a7cf9fccab": "Otwórz czat dla tego projektu i spróbuj ponownie.",
   "e3796d26e9912913": "Czat nie może teraz przyjmować danych wejściowych.",
   "4ff72c2acc7f6656": "Ładowanie…",
-  "69858f722a57708c": "Szukaj plików w {projectName}",
+  "69858f722a57708c": "Szukaj plików w projekcie {projectName}",
   "e1e1094e43a5f3d7": "{error} Kliknij, aby ponowić.",
-  "ddb58ada5516a46d": "Pliki {projectName}",
+  "ddb58ada5516a46d": "Pliki projektu {projectName}",
   "bb60a3700a8053c6": "Dostępnych jest więcej wyników. Zawęź wyszukiwanie.",
   "ffe1f2305d0a274d": "Ładowanie plików…",
   "723d88a5fa7e2fdd": "Brak pasujących plików.",
@@ -5610,7 +5610,7 @@
   "35e166912930bdbf": "Publikowanie komentarza",
   "7bfcbdbcdd625603": "Skomentuj",
   "02de63c7a0ebd94c": "Wczytywanie zgłoszenia",
-  "80bb66fe1c536e09": "Otwórz w {provider}",
+  "80bb66fe1c536e09": "Otwórz zgłoszenie w serwisie {provider}",
   "6899d17239a4b04e": [
     "otwarto ",
     {
@@ -5655,7 +5655,7 @@
   "6081fdaabe34daf7": "Przypisano",
   "2d9b7c42374ecd04": "Nie udało się wczytać tego zgłoszenia",
   "217e1e7b60469736": "Stan zgłoszenia: {state}",
-  "a98a269e3061a069": "Otwórz {issue} w {provider}",
+  "a98a269e3061a069": "Otwórz zgłoszenie {issue} w serwisie {provider}",
   "c1ff5afd83b1e027": "Odśwież zgłoszenie",
   "8ab83a75cae667a2": "Nie udało się odświeżyć tego zgłoszenia",
   "78398e2d7d040498": "Tytuł zgłoszenia",
@@ -6532,7 +6532,7 @@
   "c0298c6b34aa5de1": "{term, select, mr {Merge request} cr {Change request} other {Pull request}} jest w osobnym worktree, w którym otwarto wątek.",
   "6af44ad0dda1af38": "Kopia robocza gotowa",
   "b87fb0086b61296b": "Usunąć gałąź {branch}?",
-  "aba09c3ce3311a68": "Spowoduje to usunięcie {branch} z {repository}. Lokalne gałęzie i worktree pozostaną bez zmian.",
+  "aba09c3ce3311a68": "Spowoduje to usunięcie gałęzi {branch} z repozytorium {repository}. Lokalne gałęzie i worktree pozostaną bez zmian.",
   "a08abd0f82d7806b": "Clipboard API jest niedostępne podczas kopiowania polecenia przełączenia na {term, select, mr {merge request} cr {change request} other {pull request}}.",
   "25fa8592a887a29b": "Nie udało się skopiować do schowka polecenia przełączenia na {term, select, mr {merge request} cr {change request} other {pull request}}.",
   "ff49cda2006d155a": "Nie udało się sprawdzić przynależności do stosu",
@@ -6587,8 +6587,8 @@
   "79b1bde2e6fba654": "Napisany przed ostatnim wypchnięciem.",
   "d4557debeb8ef0de": "Nie udało się ponownie napisać przewodnika. Sprawdź model przewodnika przeglądu w sekcji „Kontrola wersji” w ustawieniach.",
   "3f96f0de0f2fd2d0": "Napisz ponownie",
-  "d3edde099bff30e7": "Nie udało się dodać {names}",
-  "d511672030b423b4": "Nie udało się usunąć {names}",
+  "d3edde099bff30e7": "Nie udało się dodać etykiet: {names}",
+  "d511672030b423b4": "Nie udało się usunąć etykiet: {names}",
   "6c5251845bcff2ac": "Host odrzucił żądanie. Sprawdź, czy masz uprawnienia na poziomie Triage w tym repozytorium.",
   "426560419bdace55": "Zmiana etykiet wymaga uprawnień na poziomie Triage w tym repozytorium",
   "36b7fbe31bde05f3": "To repozytorium nie ma etykiet.",
@@ -6700,7 +6700,7 @@
   "2ba475e878f12c1d": "Dostęp do tego repozytorium ma więcej osób, niż widać na tej liście. Użyj wyszukiwania, aby je znaleźć.",
   "8ac0e36a3cc81224": "Dopasowano tylko osoby już widoczne na liście: wyszukiwanie na hoście nie powiodło się. {error}",
   "57fdf43fd7ab602d": "Pasuje więcej osób, niż zwrócił host. Wpisuj dalej, aby zawęzić wyniki.",
-  "c3dd0089005a42af": "Nie udało się poprosić {logins} o przegląd",
+  "c3dd0089005a42af": "Nie udało się poprosić o przegląd. Użytkownicy: {logins}",
   "7f0c9aec04b2a36f": "Nie udało się wycofać prośby o przegląd skierowanej do {logins}",
   "59fe9fe34b55019b": "Host odrzucił żądanie. Sprawdź, czy masz uprawnienia do zapisu w tym repozytorium i czy te osoby nadal mają do niego dostęp.",
   "eebb6fda3557adb5": "Poproś o przegląd",
@@ -6972,16 +6972,16 @@
   "c6dc4b320806772c": "Udane: {passed} z {total}",
   "ab035833f9eeb82e": "otworzył(a) ten {term, select, mr {merge request} cr {change request} other {pull request}}",
   "58c734fa4530a488": "Sprawdź, czy gałąź nadal istnieje i czy nie jest używana w innej kopii roboczej, a potem spróbuj ponownie.",
-  "3b443f0674aed1fb": "Osiągnięto limit żądań {providerName}",
-  "6c9fa9cabd79bf13": "{providerName} tymczasowo ogranicza liczbę żądań, więc nie udało się załadować tych zmian. Spróbuj ponownie po zresetowaniu limitu lub wyświetl zmiany w {providerName}.",
+  "3b443f0674aed1fb": "Osiągnięto limit żądań w serwisie {providerName}",
+  "6c9fa9cabd79bf13": "Serwis {providerName} tymczasowo ogranicza liczbę żądań, więc nie udało się wczytać tych zmian. Spróbuj ponownie po odnowieniu limitu lub wyświetl zmiany w tym serwisie.",
   "aea6845cbd32e235": "Nie udało się załadować zmian",
-  "330a414f5a5afc83": "Środowisko nie mogło załadować zmian {term, select, mr {merge requesta} cr {change requesta} other {pull requesta}}. Spróbuj ponownie lub wyświetl zmiany w {providerName}.",
+  "330a414f5a5afc83": "Środowisko nie mogło wczytać zmian {term, select, mr {merge requesta} cr {change requesta} other {pull requesta}}. Spróbuj ponownie lub wyświetl zmiany w serwisie {providerName}.",
   "4f524a26c2f5d5dd": "Otwarty",
   "c9bfa727c07badcb": "Wersja robocza",
   "56ec35afa660d970": "Zamknięty",
   "8007555939f933ca": "Scalony",
   "82abea3aaac37338": "Otwórz na hoście",
-  "20b4665c78f801c3": "Otwórz w {host}",
+  "20b4665c78f801c3": "Otwórz w serwisie {host}",
   "258d16c1554b734c": "Kopiuj link",
   "c3d96c942dc3125d": "Nie udało się skopiować linku",
   "05cf59d40e17ba63": "Prośby o przegląd",
@@ -7037,11 +7037,11 @@
   "14a07a8f2b0df4dc": "{closed, plural, one {Zamknięto {closed} pull request} few {Zamknięto {closed} pull requesty} many {Zamknięto {closed} pull requestów} other {Zamknięto {closed} pull requesta}}",
   "48e3a799c1225e8d": "Nie udało się zaktualizować pull requesta wątku",
   "7e8a1a9a7355ac10": "Szukaj w zawartości projektu…",
-  "acd933aed79835b4": "Szukaj w zawartości plików w {project}",
+  "acd933aed79835b4": "Szukaj w treści plików w projekcie {project}",
   "99ab4b9c352f4896": "Uwzględniaj wielkość liter",
   "c016508e99843b2e": "Tylko całe wyrazy",
   "ee02309150562d1c": "Użyj wyrażenia regularnego",
-  "ab8e1a4faff53e30": "Szukaj w {project}",
+  "ab8e1a4faff53e30": "Szukaj w projekcie {project}",
   "1370b8e1fb4db617": "Wyniki: {results}+ (pliki: {files})",
   "124f0bc386f217e5": "Wyniki: {results} (pliki: {files})",
   "a8813d3506d8df65": "Sprawdzanie dostępu do plików…",
@@ -7145,7 +7145,7 @@
   "77ae65e250a4f558": "Nie udało się dodać trasy.",
   "53c162d8868a1d0e": "Dodaj środowisko",
   "53339e47accf021a": "Szukaj hostów lub wpisz devbox",
-  "d808738388ab80b0": "Dodaj trasę do {environment}",
+  "d808738388ab80b0": "Dodaj trasę do środowiska {environment}",
   "7662025844bf543f": "Dodaj środowisko",
   "65b1d784a5e84254": "Sparuj ten komputer ponownie przez inny adres, np. jego nazwę w Tailscale. Nowy adres zostanie dodany do istniejących tras bez dodawania drugiego komputera.",
   "1bea4864d46d70d0": "Sparuj inne środowisko z tym klientem.",
@@ -7190,7 +7190,7 @@
   "fab845f54ae10809": "Pokaż więcej",
   "2d01359dca42e2ef": "Więcej dostawców",
   "cdecc0a608e64602": "Wpisz ręcznie",
-  "23da097d98d265ed": "Uruchom zainstalowany plik wykonywalny ACP w {environment}.",
+  "23da097d98d265ed": "Uruchom zainstalowany plik wykonywalny ACP w środowisku {environment}.",
   "aac615bb3f6cf0f4": "Wpisz oficjalny identyfikator z rejestru. Opcjonalnie wskaż lokalny plik wykonywalny lub podaj własne ustawienia uwierzytelniania.",
   "f129782ff48cb542": "Otwórz dokumentację {name} ({id})",
   "e6a579858c8ac661": "Otwórz kod źródłowy {name} ({id})",
@@ -7203,7 +7203,7 @@
   "8379f1ca72bf8859": "Przejdź do logowania",
   "3cfe596e1f02e49f": "Dodaj instancję",
   "764aae21fbbf37aa": [
-    "Dodaj konto lub skonfiguruj dostawcę w ",
+    "Dodaj konto lub skonfiguruj dostawcę w środowisku ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -7223,7 +7223,7 @@
   "7ac196c1e8175928": "Domyślnie nazwa hosta huba",
   "e3548407052e9e12": "Dodaj hub CLIProxyAPI",
   "432e85a50e2e7964": [
-    "Pokazuj limity wszystkich kont, które łączy hub, obok dostawców w ",
+    "Pokazuj limity wszystkich kont obsługiwanych przez hub obok listy dostawców w środowisku ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -7277,7 +7277,7 @@
   "997a837b4d1a3c62": "Przywróć domyślny kontekst pola wiadomości",
   "170455e28b72bdb0": "Pokazuj kontekst pola wiadomości w aktywnych wątkach",
   "8e944f7583a727fd": "Przywróć z archiwum",
-  "9e4e731164d1d283": "Przywróć {title} z archiwum",
+  "9e4e731164d1d283": "Przywróć wątek z archiwum: {title}",
   "8e4a82fb94d107bb": "Nie udało się przywrócić wątku z archiwum",
   "ea24f015d73520fd": "Usuń",
   "d6b75f6c2f576a2c": "Usuń {title}",
@@ -7422,7 +7422,7 @@
   "800c4f374a9ad325": "Ten profil nie jest już dostępny. Wybierz, dokąd zaimportować te pliki cookie.",
   "e26c3e8a2b76eb7c": "Nie udało się otworzyć Ustawień systemowych. Spróbuj ponownie kliknąć „Zezwól”.",
   "6691de9875a03f07": "Pełny dostęp do dysku",
-  "c8c61106697ccef6": "Odczyt plików cookie z {browser} na potrzeby tego importu.",
+  "c8c61106697ccef6": "Odczyt plików cookie z przeglądarki {browser} na potrzeby importu.",
   "9d7376f252f4b80f": "Dostęp jest nadal wymagany. Jeśli dopiero go przyznano, zamknij i ponownie otwórz T3 Code, a potem ponów import.",
   "a134bbc40d0bb293": "Jeśli po przyznaniu uprawnienia aplikacja nadal zgłasza brak dostępu, zamknij i ponownie otwórz T3 Code, a potem ponów import.",
   "7f0e44a32856487e": "Osiągnięto limit profili. Wybierz istniejący profil jako cel importu.",
@@ -7437,10 +7437,10 @@
   "7513f0a2afb216be": "{count, plural, one {Zaimportowano {formatted} plik cookie} few {Zaimportowano {formatted} pliki cookie} many {Zaimportowano {formatted} plików cookie} other {Zaimportowano {formatted} pliku cookie}}",
   "982bd5b9687a7474": "{count, plural, one {Pominięto {formatted} plik cookie} few {Pominięto {formatted} pliki cookie} many {Pominięto {formatted} plików cookie} other {Pominięto {formatted} pliku cookie}}",
   "6cab2d410a8b3237": "Nie znaleziono plików cookie",
-  "2fa46ec8209249a1": "{count, plural, one {Dodano do {target} dla {environment}. Pominięto {formatted} plik cookie.} few {Dodano do {target} dla {environment}. Pominięto {formatted} pliki cookie.} many {Dodano do {target} dla {environment}. Pominięto {formatted} plików cookie.} other {Dodano do {target} dla {environment}. Pominięto {formatted} pliku cookie.}}",
-  "a14c9abc396d0670": "Dodano do {target} dla {environment}.",
-  "ad6cf05e0049c4c1": "Nie zaimportowano żadnych plików cookie dla {environment}.",
-  "7bfd99f6645384c9": "Brak plików cookie do zaimportowania dla {environment}.",
+  "2fa46ec8209249a1": "Dodano pliki cookie do profilu {target} w środowisku {environment}. {count, plural, one {Pominięto {formatted} plik cookie.} few {Pominięto {formatted} pliki cookie.} many {Pominięto {formatted} plików cookie.} other {Pominięto {formatted} pliku cookie.}}",
+  "a14c9abc396d0670": "Dodano pliki cookie do profilu {target} w środowisku {environment}.",
+  "ad6cf05e0049c4c1": "Nie zaimportowano żadnych plików cookie do środowiska {environment}.",
+  "7bfd99f6645384c9": "Brak plików cookie do zaimportowania do środowiska {environment}.",
   "4daea52e5c94a9f2": "Pominięto",
   "fb5ddb28ee4b2efc": [
     "Zamknij ",
@@ -7487,7 +7487,7 @@
     }
   ],
   "23523f286a272f4d": [
-    "Wybierz, które pliki cookie zaimportować dla ",
+    "Wybierz pliki cookie do zaimportowania do środowiska ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -7507,7 +7507,7 @@
     }
   ],
   "c6f6eec2b07cd625": [
-    "Nie udało się zaimportować z ",
+    "Nie udało się zaimportować plików cookie z przeglądarki ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -7616,8 +7616,8 @@
   "0a7813c7df04ffe9": "Zarządzaj dyktowaniem OpenRouter",
   "9996968084688efe": "Zarządzaj kluczem {company}",
   "bf6a4f30c36e0a87": "Używać {name} do dyktowania?",
-  "710bec893f7881d1": "Wszyscy, którzy używają {name} do dyktowania w {environment}, stracą dostęp.",
-  "f6737abf6f99aeac": "Każdy, kto ma dostęp do dyktowania w {environment}, może używać tego klucza API.",
+  "710bec893f7881d1": "Wszyscy, którzy korzystają z usługi {name} do dyktowania w środowisku {environment}, stracą do niej dostęp.",
+  "f6737abf6f99aeac": "Każdy, kto ma dostęp do dyktowania w środowisku {environment}, może używać tego klucza API.",
   "ae3375e7f2d10df7": "Zapisz i włącz",
   "d07f8134999c97ea": "Zapisz klucz",
   "a2f4d7c36423bbe5": "Brak pasujących modeli transkrypcji.",
@@ -7631,13 +7631,13 @@
     " nie ma już na liście OpenRouter. Dyktowanie pozostanie wyłączone, dopóki nie wybierzesz innego modelu."
   ],
   "3e91d66852dfc3fe": [
-    "Aby kontynuować, nawiąż połączenie z ",
+    "Aby kontynuować, połącz się ze środowiskiem ",
     {
       "i": 1,
       "k": "_gt_value_1",
       "v": "v"
     },
-    ", które daje dostęp do dyktowania."
+    ", korzystając z połączenia z uprawnieniem do dyktowania."
   ],
   "1d33877ef8ea3559": "Ponów wczytywanie klucza API",
   "be805c1729dc0726": [
@@ -7652,7 +7652,7 @@
   "d7acad5dde4c1d1b": "Sprawdzanie klucza API…",
   "8257030da7a4ad4e": "Model",
   "418d9b293a8983a9": [
-    "Poproś administratora ",
+    "Poproś administratora środowiska ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -7755,7 +7755,7 @@
   "c4e68ca143d1cb28": "Zmień konto",
   "d356add77d113720": "Rozłącz",
   "90fca700a649603e": "Urządzenia T3 Connect",
-  "2a2675972bd6818a": "Cofnąć dostęp dla {name}?",
+  "2a2675972bd6818a": "Cofnąć dostęp urządzeniu {name}?",
   "305e4fd592eb570a": "Nie udało się cofnąć dostępu urządzenia",
   "c9ae6751db0ea9cb": [
     "Oczekiwanie na zatwierdzenie · ",
@@ -8199,7 +8199,7 @@
   "9eb4c2de6252d332": "Ikona",
   "ff1bcfdccab3d837": "Usunąć trasę {route}?",
   "bd788c3bdf99d29e": "Usunąć trasę {route}?\n{address}",
-  "2d22ff842ebd95f5": "Trasy do {environment} (w kolejności preferencji)",
+  "2d22ff842ebd95f5": "Trasy do środowiska {environment} (preferowane na początku)",
   "c44f306568c17f1f": "wykryta automatycznie",
   "f6e62d06f525c520": "Zmień kolejność: {route}, pozycja {position}",
   "136b22b496135313": "Usuń trasę {route}",
@@ -8257,7 +8257,7 @@
   "b9335f8e528f91d6": "Przywróć domyślne ustawienie opcji „Otwieraj pull requesty w T3 Code”",
   "d5a0a7ab5da467aa": "Otwieraj pull requesty w T3 Code",
   "55087c889e8a065d": "Nie zapisano ustawień urządzeń we wszystkich środowiskach",
-  "73e76ba75c8d3096": "Nie udało się zaktualizować {environments}.",
+  "73e76ba75c8d3096": "Nie udało się zapisać ustawień w tych środowiskach: {environments}.",
   "b16605b8957226ea": "Zaktualizuj",
   "f8571b5368d6d847": "Sprawdź wersje",
   "388698edad9faf0e": "Dostęp agentów do urządzeń",
@@ -8274,9 +8274,9 @@
   "5b443efaaf693ab5": "Połącz się ze środowiskiem przed usunięciem tego profilu.",
   "db027eae86645c9e": "Nie udało się usunąć danych profilu. Spróbuj ponownie.",
   "d0af856f8f085480": "Profile oddzielają pliki cookie i dane logowania. Dane trybu incognito są czyszczone po zamknięciu aplikacji.",
-  "2b51da08e571aa50": "Zmień nazwę {name}",
+  "2b51da08e571aa50": "Zmień nazwę profilu „{name}”",
   "8fef1ad9234284f7": "Domyślny",
-  "ca384fd1a1d6e1bb": "Opcje {name}",
+  "ca384fd1a1d6e1bb": "Opcje profilu „{name}”",
   "8b45e296e25933cb": "Połącz się ze środowiskiem, aby wyczyścić dane profilu",
   "c7902d95bd57a25f": "Usuwanie…",
   "4a42ed8f9a4c6750": "Usuń profil",
@@ -8336,7 +8336,7 @@
   "58e0e226493150e7": "Nie udało się wczytać systemów zgłoszeń",
   "77cfcbde543df32d": "Pokaż lub ukryj szczegóły systemu zgłoszeń {tracker}",
   "0083f65885c60156": "Rozłącz {tracker}",
-  "15ad0159a826b290": "Wybierz {scope} w {tracker}: każdy projekt wyświetla zgłoszenia stamtąd obok zgłoszeń z własnego repozytorium.",
+  "15ad0159a826b290": "W każdym projekcie wskaż {scope, select, team {zespół} other {pozycję typu „{scope}”}} w systemie {tracker}. Zgłoszenia z tego źródła pojawią się obok zgłoszeń z repozytorium projektu.",
   "19c2d5e81ff8f89a": "{scope} w {tracker} dla projektu {project}",
   "68e061510b765772": "Nie przypisano",
   "a2d95d39d3398bda": "Odrzucono dane logowania",
@@ -8425,9 +8425,9 @@
   "03f8789fc359bc15": "Szukaj skrótów klawiszowych",
   "1d55c82866fd5242": "Nieznany warunek: {condition}",
   "41a022fbed1b1d49": "Nieznane warunki: {conditions}",
-  "2396bc6fbb953b89": "Koliduje z {command}.",
-  "6ab594cb4ad745fa": "Koliduje z {commands} i innymi.",
-  "da90e928d36789fb": "Koliduje z {commands}.",
+  "2396bc6fbb953b89": "Konflikt ze skrótem polecenia „{command}”.",
+  "6ab594cb4ad745fa": "Konflikt ze skrótami poleceń: {commands} i inne.",
+  "da90e928d36789fb": "Konflikt ze skrótami poleceń: {commands}.",
   "6f7428ac068ff7ad": "Warunek",
   "b8a82cb5f093ad15": "Zaneguj {condition}",
   "ffb001f07764c19e": "Nie",
@@ -8439,11 +8439,11 @@
   "4440507203ab6ab2": "Kiedy",
   "5df837c01830b63e": "Zawsze",
   "0622f61ec79b0294": "Wyrażenie warunku",
-  "4d5e1036410e2a18": "Edytuj skrót dla {command}: {shortcut}",
+  "4d5e1036410e2a18": "Edytuj skrót polecenia „{command}”: {shortcut}",
   "a974eca924f7ed52": "Nieprzypisany",
-  "337a261bf1551d16": "Skrót klawiszowy dla {command}",
+  "337a261bf1551d16": "Skrót klawiszowy polecenia „{command}”",
   "bd8e87512fd9bdf2": "Nieprzypisany",
-  "4da9b09518a3f47a": "Akcje dla {command}",
+  "4da9b09518a3f47a": "Opcje polecenia „{command}”",
   "5cbab536dac9dc5f": "Usuń przypisanie",
   "cd710f3021f96ea8": "Usuń",
   "f8cb80286abc221a": "Własny",
@@ -8529,7 +8529,7 @@
   "58cb9c075da185fb": "Ładowanie powiązanych środowisk…",
   "25b74062dc03079e": "Brak powiązanych środowisk",
   "6698127fcc912f23": "Powiąż inny komputer z T3 Code, np. VPS, aby agenty z tego komputera mogły uruchamiać tam wątki i nimi sterować.",
-  "ad5ed0ce61b966eb": "Zapomnieć {label}? Agenty z tego komputera przestaną tam działać. Aby zakończyć również tamtą sesję, unieważnij „T3 Code · …” w sekcji „Udostępnianie i dostęp” na {label}.",
+  "ad5ed0ce61b966eb": "Usuń powiązanie ze środowiskiem „{label}”? Agenty z tego komputera przestaną tam działać. Aby zakończyć również sesję zdalną, cofnij dostęp dla „T3 Code · …” w sekcji „Udostępnianie i dostęp” środowiska „{label}”.",
   "81c9796bf61b306a": "Nie udało się zapomnieć powiązania",
   "33386c89f3b07fea": "Wygasło. Powiąż je ponownie, używając nowego kodu parowania.",
   "13d91e967cd9065c": "Teraz nie odpowiada.",
@@ -8538,7 +8538,7 @@
   "57f38a04b1e5c033": "Zapominanie…",
   "20ffe8337f8f30ba": "Zapomnij",
   "e1789f863205ad5a": "Nie udało się powiązać środowiska",
-  "40cde51afa218290": "Powiązano {label}",
+  "40cde51afa218290": "Powiązano środowisko „{label}”",
   "eefe994332120d82": "Powiąż",
   "fb71127e5746a6bc": "Z sekcji „Udostępnianie i dostęp” na tamtym komputerze lub z polecenia t3 pair",
   "130e51beb6cf5aad": "Powiąż środowisko",
@@ -8727,7 +8727,7 @@
   "fc10b8da35c8560e": "Albo wklej dowolne emoji",
   "4051af9bdf152942": "Zapisz ikonę",
   "d79d3cfdd7864be5": "Nie udało się zapisać reguły grupowania",
-  "b76e857a764ea02a": "Reguła grupowania dla {path} w {environment}",
+  "b76e857a764ea02a": "Reguła grupowania dla ścieżki {path} w środowisku {environment}",
   "e6e55f343639ae71": "Domyślna ({mode})",
   "87158e7b8e714bc6": "Dodaj projekt z paska bocznego, aby go tu skonfigurować.",
   "ee3ea4351c88e7d7": "Ten projekt nie jest już dostępny.",
@@ -8790,8 +8790,8 @@
   "72e721333daf10c0": "Zalogowano.",
   "2e5faa8c1b194a16": "Wykrywanie metod logowania…",
   "300d4800cd6292f9": "Dostawca nie oferuje logowania w aplikacji. Aby dokończyć konfigurację, postępuj zgodnie z jego dokumentacją.",
-  "a798580f5564e0e0": "Nawiąż połączenie w {environment}, aby załadować modele.",
-  "39eb44f3b207442c": "Zaloguj się w {environment}.",
+  "a798580f5564e0e0": "Połącz się z dostawcą w środowisku {environment}, aby załadować modele.",
+  "39eb44f3b207442c": "Zaloguj się w środowisku {environment}.",
   "39a7578443219b8f": "Logowanie do dostawcy nie powiodło się. Spróbuj ponownie.",
   "179d3c67e76bb669": "Ten link logowania nie jest adresem internetowym, więc nie został otwarty.",
   "d80e10905a0fb8fb": "Nie udało się otworzyć strony logowania. Skopiuj link i otwórz go w przeglądarce.",
@@ -8804,7 +8804,7 @@
   "99bb27b91bab1824": "Zmień konto",
   "bab85ed5989ef4df": "Ponów logowanie",
   "8c4f4ec4de08ed72": "Połącz",
-  "032f6dd7ca55ec6f": "Wylogować się z {provider} w {environment}? Spowoduje to zatrzymanie działających wątków korzystających z tego logowania. Historia wątków zostanie zachowana.",
+  "032f6dd7ca55ec6f": "Wylogować się z usługi {provider} w środowisku {environment}? Spowoduje to zatrzymanie działających wątków korzystających z tego logowania. Historia wątków zostanie zachowana.",
   "58239cd7288bdc37": "Terminal logowania dostawcy nie jest już dostępny.",
   "99fff7aa0034e316": "Nie udało się wysłać danych do terminala logowania dostawcy.",
   "3dc5298b137a9434": [
@@ -9001,7 +9001,7 @@
   "06b8573c3ea61d63": "Nie udało się połączyć z tym urządzeniem",
   "da7235f3f7443c7f": "Ustawienia dostawcy są niedostępne",
   "ddaa0a4463334cb7": "Sprawdzanie, co ta sesja może zmieniać.",
-  "9ed261896a1a07d2": "Oczekiwanie na konfigurację {environment}.",
+  "9ed261896a1a07d2": "Oczekiwanie na konfigurację środowiska {environment}.",
   "e7aab8ef4517d524": "Urządzenie niedostępne",
   "eabebaca9219cb3a": "Połącz ponownie to urządzenie, aby skonfigurować jego dostawcę, lub wybierz inne urządzenie.",
   "3856bad1de97c295": "Brak połączonych urządzeń",
@@ -9291,9 +9291,9 @@
   "8f10acca82ed4772": "Użyj kopii roboczej projektu",
   "f74095e733bcbac1": "Użyj określonej kopii roboczej",
   "987167a51fcdd1e7": "Niepołączone: {environments}",
-  "8792ce1caba45445": "Ładowanie zaplanowanych zadań z {environments}",
+  "8792ce1caba45445": "Ładowanie zaplanowanych zadań ze środowisk: {environments}",
   "6c8d4ee4bbbf40bc": "Nie udało się załadować zaplanowanych zadań: {environments}",
-  "aa37be1124aaa509": "Brak zadań w {environments}",
+  "aa37be1124aaa509": "Brak zadań w środowiskach: {environments}",
   "91876b8b9618d1b0": "Nie zaplanowano",
   "53de4bfd253ccd17": "za mniej niż minutę",
   "888035725b30714f": "za {minutes} min",
@@ -9317,7 +9317,7 @@
   "8ef35397b5026884": "To zadanie zostało usunięte lub należy do innego projektu. Sprawdź filtr projektów.",
   "1517f4c831b1c8aa": "Brak zaplanowanych zadań",
   "6d799d4105f2696b": "Żadne zadania nie pasują do wybranego środowiska i projektu.",
-  "02a00277f3787f40": "Połącz ponownie {label}, aby wyświetlić zaplanowane zadania.",
+  "02a00277f3787f40": "Połącz się ponownie ze środowiskiem „{label}”, aby wyświetlić jego zaplanowane zadania.",
   "90c19958052b0685": "Nie udało się załadować zaplanowanych zadań",
   "2703e1eca8c287b6": "Ładowanie zaplanowanych zadań…",
   "3dd2df6f4840a9cc": "Usunąć „{title}”?",
@@ -9458,18 +9458,18 @@
   "acbf0b4710755dc1": "Osobiste",
   "bc714daca44e1826": "Zapisz zmiany",
   "787b3fff435313e4": [
-    "Zmienne dostawców na ",
+    "Zmienne dostawców w środowisku ",
     {
       "i": 1,
       "k": "_gt_value_1",
       "v": "v"
     },
-    " mogą odczytywać z niego wartości według nazwy. Wartości są odczytywane za pomocą narzędzia CLI op na tym serwerze podczas uruchamiania dostawcy."
+    " mogą pobierać wartości z 1Password według nazwy. Serwer pobiera je narzędziem CLI op podczas uruchamiania dostawcy."
   ],
   "daf8daec701f0863": "Konto",
   "c3d6c8494c7d4b8f": "Skrócona nazwa konta, identyfikator pokazywany przez op account list lub adres logowania bez https://.",
   "afa8b4a2e025dd36": "Wartość",
-  "13f8f1e086293635": "Źródło {label}",
+  "13f8f1e086293635": "Źródło wartości pola „{label}”",
   "4579dce838e7c0a3": "Nie udało się połączyć z serwerem",
   "72906d2339314412": "Nie możesz sprawdzać sekretów w tym środowisku",
   "314546d4d3481e1f": "Sprawdź, czy sekret da się odczytać",
@@ -9477,7 +9477,7 @@
   "d4ce4e6e4826e278": "Odczytano sekret",
   "40916e46dfac8738": "Błąd {label}: {detail}",
   "9064b191dab9f782": "Odczytano {label}",
-  "4d12d2e6d168fdb5": "Odwołanie do {label}",
+  "4d12d2e6d168fdb5": "Odwołanie do sekretu: {label}",
   "f7b9aef971c1ce37": "Sprawdź {label}",
   "3e3cabe47b0b5c07": "Głos · {provider}",
   "cd90b098a17bca20": "Nie skonfigurowano żadnych dostawców sekretów.",
@@ -9485,13 +9485,13 @@
   "382541febe15f472": "Przełącz widoczność konta",
   "40426afd511710f8": "Nieobsługiwany dostawca ({kind})",
   "69dc1b9968c66243": [
-    "Zaktualizuj T3 Code na ",
+    "Zaktualizuj T3 Code w środowisku ",
     {
       "i": 1,
       "k": "_gt_value_1",
       "v": "v"
     },
-    ", aby zarządzać dostawcami sekretów tego środowiska."
+    ", aby zarządzać jego dostawcami sekretów."
   ],
   "13d4f258e93f1dc1": "Połącz środowisko, aby zarządzać dostawcami sekretów, z których korzystają zmienne dostawców w tym środowisku.",
   "88466f5a03be2419": "Ustawienie dla całego środowiska. Wybierz środowisko, aby je zmienić.",
@@ -9597,7 +9597,7 @@
   "8bf01d9bb1aee8ad": "Bieżąca wersja aplikacji.",
   "04252d1e180b2731": "{policy} Kompilacje Nightly są niedostępne; przełącz się na kanał „Stabilny”, aby nadal otrzymywać aktualizacje.",
   "7636fc45b55353dd": "{policy} Kompilacje Nightly są niedostępne.",
-  "c14b0386a7b5ea1e": "{count, plural, one {{count} komputer nadal używa {track}.} few {{count} komputery nadal używają {track}.} many {{count} komputerów nadal używa {track}.} other {{count} komputera nadal używa {track}.}}",
+  "c14b0386a7b5ea1e": "{count, plural, one {{count} komputer nadal korzysta z kanału {track}.} few {{count} komputery nadal korzystają z kanału {track}.} many {{count} komputerów nadal korzysta z kanału {track}.} other {{count} komputera nadal korzysta z kanału {track}.}}",
   "d549b07e6da417d6": "Przełącza tę aplikację i każdy połączony komputer, którego bazę danych obsługuje docelowe wydanie.",
   "a7963e0a4a243657": "Kanał aktualizacji",
   "0dbc9c6e12b33a8f": "Przełącza kanał wydań aplikacji hostowanej.",
@@ -9797,7 +9797,7 @@
         {
           "t": "span",
           "i": 2,
-          "c": "Stosowanie ustawień dla"
+          "c": "Zakres:"
         },
         {
           "i": 3,
@@ -9813,7 +9813,7 @@
         {
           "t": "span",
           "i": 5,
-          "c": "na"
+          "c": "·"
         },
         {
           "i": 6,
@@ -9829,7 +9829,7 @@
         {
           "t": "span",
           "i": 8,
-          "c": "w"
+          "c": "·"
         },
         {
           "i": 9,
@@ -9847,7 +9847,7 @@
         {
           "t": "span",
           "i": 2,
-          "c": "Stosowanie ustawień dla"
+          "c": "Zakres:"
         },
         {
           "i": 3,
@@ -9863,7 +9863,7 @@
         {
           "t": "span",
           "i": 5,
-          "c": "na"
+          "c": "·"
         },
         {
           "i": 6,
@@ -9881,7 +9881,7 @@
         {
           "t": "span",
           "i": 2,
-          "c": "Stosowanie ustawień dla"
+          "c": "Zakres:"
         },
         {
           "i": 3,
@@ -9897,7 +9897,7 @@
         {
           "t": "span",
           "i": 5,
-          "c": "w"
+          "c": "·"
         },
         {
           "i": 6,
@@ -9913,7 +9913,7 @@
         {
           "t": "span",
           "i": 8,
-          "c": "w"
+          "c": "·"
         },
         {
           "i": 9,
@@ -9931,7 +9931,7 @@
         {
           "t": "span",
           "i": 2,
-          "c": "Stosowanie ustawień dla"
+          "c": "Zakres:"
         },
         {
           "i": 3,
@@ -9947,7 +9947,7 @@
         {
           "t": "span",
           "i": 5,
-          "c": "w"
+          "c": "·"
         },
         {
           "i": 6,
@@ -10573,8 +10573,8 @@
   "dfb592864b0f6c24": "Nie udało się wczytać ostatniego uruchomienia.",
   "dc46686aee0439ed": "Wczytywanie ostatniego uruchomienia…",
   "3719ceced4b9f235": "Czyszczenie nie zostało jeszcze uruchomione.",
-  "7295ef78b7179bef": "Czyszczenie na {label} nie powiodło się",
-  "fa9ff87775b5fecc": "Nie udało się uruchomić czyszczenia na {label}",
+  "7295ef78b7179bef": "Czyszczenie w środowisku {label} nie powiodło się",
+  "fa9ff87775b5fecc": "Nie udało się uruchomić czyszczenia w środowisku {label}",
   "e34367e495289538": "Czyszczenie",
   "9f0ff9f8f6205221": "Włącz regułę czyszczenia, aby z tego skorzystać.",
   "2a83c8767b3e1918": "Usuwanie…",
@@ -10639,7 +10639,7 @@
   "523b72ed9d712100": "Eksport OpenTelemetry",
   "ecaa5a9da2c44a47": "Wybierz jedno środowisko, aby skonfigurować jego eksport telemetrii.",
   "5548e6d2e9b8cc64": "Zapisano. Uruchom ponownie serwer, aby zastosować zmiany.",
-  "23029f9ce3382536": "To połączenie nie ma uprawnień do zmiany ustawień w {environment}.",
+  "23029f9ce3382536": "Przez to połączenie nie można zmieniać ustawień w środowisku {environment}.",
   "a5f1fe10ef6373fd": "Wpisz punkt końcowy HTTP lub HTTPS albo pozostaw puste, aby wyłączyć eksport.",
   "5b928a84a624e831": "W użyciu: {url}",
   "b07718fe86a16cc6": "W użyciu: wyłączone",
@@ -10711,13 +10711,13 @@
     "?"
   ],
   "25cda5585875c18a": [
-    "Spowoduje to usunięcie klucza API zapisanego na ",
+    "Spowoduje to usunięcie klucza API zapisanego w środowisku ",
     {
       "i": 1,
       "k": "_gt_value_1",
       "v": "v"
     },
-    ". Wszystko, co korzysta z tego generatora, przełączy się na model generowania tekstu."
+    ". Zadania korzystające z tego generatora przejdą na model generowania tekstu."
   ],
   "2e487089c231536b": "Usługa",
   "c732b08a5fa8c3d7": "Bazowy URL",
@@ -11047,7 +11047,7 @@
   "e5d6987a20f31041": "Usuń {term}",
   "7aa983707887c8aa": "Słownik projektu",
   "1d6e4f086f8f60d5": "Wspólny słownik",
-  "5898e45f720cc83a": "Używany przez wszystkich, którzy dyktują w {label}.",
+  "5898e45f720cc83a": "Korzysta z niego każdy, kto dyktuje w projekcie „{label}”.",
   "8dbe4db55ffc00b3": "Używany przez wszystkich, którzy dyktują w tym środowisku.",
   "30557f4f5dded4a8": "słownik projektu",
   "7efc6881070a6f71": "wspólny słownik",
@@ -11242,7 +11242,7 @@
   "7c5d597ee0a16e05": "Uruchomiono",
   "fde10553f91c7707": "To ustawienie obowiązuje w całym środowisku i projekt nie może go nadpisać.",
   "87c9ee882704c64c": "Połącz się ze środowiskami wybranych kopii roboczych lub zaktualizuj te środowiska, aby zapisać indywidualne ustawienie projektu.",
-  "517d756b99498622": "Połącz {environment}, aby zapisać to ustawienie.",
+  "517d756b99498622": "Połącz się ze środowiskiem „{environment}”, aby zapisać to ustawienie.",
   "63426ea5d50585a6": "Połącz środowisko, aby zapisać to ustawienie.",
   "5aedadfc9fef7d3b": "Połącz się ze środowiskami wybranych kopii roboczych lub zaktualizuj te środowiska, aby usunąć to indywidualne ustawienie projektu.",
   "7d0ff8d36a670261": "Połącz środowiska, aby zresetować te nadpisania.",
@@ -11259,7 +11259,7 @@
   "06e9973f7537ed51": "Nadpisane dla tego projektu",
   "b1d09e365249f87b": "Dziedziczone z pliku t3.json repozytorium",
   "539b097411fd1307": "Dziedziczone ze środowiska",
-  "6340f81c024cfe12": "Dziedziczone z {environment}",
+  "6340f81c024cfe12": "Dziedziczone ze środowiska „{environment}”",
   "49a60879f4348f46": "Ustawione w środowisku",
   "ec6d6d39d1fd1bef": "Wbudowana wartość domyślna",
   "a2af8b308068156a": "Przywróć domyślne",
@@ -11492,10 +11492,10 @@
   "0e4cd25642a2df00": "Brak dostępnego komputera albo trwa zapisywanie innej zmiany akcji.",
   "3eca4140f377b50b": "Nie zapisano akcji",
   "c4e527f7d77ebe84": "To połączenie nie może zmieniać ustawień środowiska.",
-  "95ff9069b974317c": "Ten model jest niedostępny w {environment}. Wybierz to środowisko, aby osobno wybrać dla niego model.",
+  "95ff9069b974317c": "Ten model jest niedostępny w środowisku „{environment}”. Wybierz to środowisko, aby osobno wybrać dla niego model.",
   "b18a6e1b9875df35": "Ten model jest niedostępny w jednym z wybranych środowisk. Wybierz to środowisko, aby osobno wybrać dla niego model.",
   "3d7abd288b8d6d37": "To połączenie nie ma uprawnień do zmiany tych ustawień.",
-  "7260a6658b09efee": "Nie udało się zapisać w {label}: {message}",
+  "7260a6658b09efee": "Nie udało się zapisać ustawień w środowisku „{label}”. Powód: {message}",
   "c280dbfac3f28888": "Nie udało się rozpocząć nagrywania skrótu.",
   "3783f7d9877c9cba": "Dodaj do skrótu literę, cyfrę lub klawisz funkcyjny.",
   "008e305ea6638832": "Nagraj skrót migawki, obecnie {shortcut}",
@@ -11874,9 +11874,9 @@
   "66796576034c18ea": "Ultraszybki",
   "218d7bca77da345b": "{target} mapuje ten model. Najpierw usuń je z „Zastosuj do” albo wyczyść jego mapowanie.",
   "60ccdf9bdb7c3149": "Mapuj na inny model.",
-  "3155a2bd93dd97d9": "Pole {field} jest wymagane w {target}.",
+  "3155a2bd93dd97d9": "Pole „{field}” jest wymagane w środowisku „{target}”.",
   "757c752842c88658": "Podaj ceny jako liczby nieujemne.",
-  "a308e844f2e82778": "Mapowania modeli nie mogą tworzyć cyklu w {target}.",
+  "a308e844f2e82778": "Mapowania modeli nie mogą tworzyć cyklu w środowisku „{target}”.",
   "b6be43c36bab124c": "Zaktualizuj serwer, aby mapować modele",
   "1eee306da7eb0382": "Nie udało się zapisać. Spróbuj ponownie.",
   "c8fa587fc0be1938": "Limity",
