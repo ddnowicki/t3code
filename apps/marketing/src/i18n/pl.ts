@@ -14,7 +14,7 @@ export const pl: Messages = {
     mitLicensed: "Licencja MIT",
     iosApp: "Aplikacja na iOS",
     androidApp: "Aplikacja na Androida",
-    terms: "Warunki",
+    terms: "Regulamin",
     privacy: "Prywatność",
     security: "Bezpieczeństwo",
   },
@@ -32,13 +32,13 @@ export const pl: Messages = {
     sourceLink: "Ukradnij nasz kod (legalnie)",
     alsoOnPhone: "Także na telefonie:",
     screenshotAlt: "T3 Code z subagentami Claude, Codex, Muse i Gemini w jednym wątku",
-    endorsementsTitle: "Tolerowany przez ponad {users} programistów",
+    endorsementsTitle: "Ponad {users} programistów twierdzi, że ujdzie",
     endorsementsSub: "Niektórzy nawet o tym tweetowali.",
     endorsementsLabel: "Opinie programistów",
     readPost: "Przeczytaj post użytkownika {handle} na X",
-    harnessTitle: "Przynieś własną subskrypcję",
+    harnessTitle: "Korzystaj z subskrypcji, którą już masz",
     harnessBody:
-      "T3 Code nie odsprzedaje tokenów. Podłącz Claude Code, Codex, Antigravity, OpenCode, Cursor lub Grok z danymi logowania, które już masz. My je orkiestrujemy, a ty zachowujesz swój plan.",
+      "T3 Code nie odsprzedaje tokenów. Podłącz Claude Code, Codex, Antigravity, OpenCode, Cursor lub Grok z danymi logowania, które już masz. My koordynujemy ich pracę, a ty zostajesz przy swojej subskrypcji.",
     googleSignIn: "Logowanie przez Google",
     harnessPoints: [
       "Żadnych odsprzedawanych kluczy. Żadnych limitów.",
@@ -52,7 +52,7 @@ export const pl: Messages = {
     viewDiff: "Pokaż zmiany",
     openPullRequest: "Otwórz pull request",
     commitPush: "Zatwierdź i wypchnij",
-    gitTitle: "Jeden przycisk na commit, push i PR.",
+    gitTitle: "Commit, push i PR jednym kliknięciem.",
     gitBody:
       "Każdy wątek agenta pracuje na własnej gałęzi. Gdy wynik jest dobry, jeden przycisk otwiera PR na GitHubie z wygenerowanym tytułem, opisem i listą zmian. Bez tańców w terminalu.",
     gitPoints: [
@@ -86,7 +86,7 @@ export const pl: Messages = {
     nightly: "Nightly",
     intelNote: "Masz Maca z procesorem Intel? {link}.",
     intelLink: "Pobierz wersję x64",
-    armNote: "Masz ARM? Pobierz pakiet arm64 {deb} lub {appimage}.",
+    armNote: "Masz komputer z procesorem ARM? Pobierz pakiet arm64 {deb} lub {appimage}.",
     mobile: "Urządzenia mobilne",
     iphoneIpad: "iPhone i iPad",
     terminal: "Terminal",
